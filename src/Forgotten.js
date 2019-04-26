@@ -14,7 +14,7 @@ class Forgotten extends Component {
                     alt="logo"
                     className="logo-img"
                 />
-                <h2>Trouble logging in?</h2>
+                <h3>Trouble logging in?</h3>
                 <form method="post" className="items-start">
                     <p>Enter your username or email and we'll 
                        send you a link to get back into your account.
@@ -29,16 +29,17 @@ class Forgotten extends Component {
                     <a
                         name="forgotten"
                         onClick={this.props.signup}
-                        className="self-end sub-text cursor-pointer main-text">
+                        className="self-end sub-text cursor-pointer main-text hoverable">
                         <p>Create new account</p>
                     </a>
                     <button 
-                        className="self-center main-text">
+                        className="self-center main-text cursor-pointer">
                         Reset
                     </button>
                     <br/>
+                    <br/>
                     <p 
-                        className="self-center sub-text cursor-pointer"
+                        className="self-center sub-text cursor-pointer hoverable"
                         onClick={this.props.login}>
                         Back to login
                     </p>

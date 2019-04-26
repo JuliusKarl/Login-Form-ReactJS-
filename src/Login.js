@@ -15,7 +15,7 @@ class Login extends Component {
                     alt="logo"
                     className="logo-img"
                 />
-                <h2>Sign In</h2>
+                <h3>Log In</h3>
                 <form method="post" className="items-start">
                     <input 
                         type="text" 
@@ -39,9 +39,10 @@ class Login extends Component {
                         <p>Forgot Password?</p>
                     </a>
                     <button 
-                        className="self-center main-text">
+                        className="self-center main-text cursor-pointer">
                         Login
                     </button>
+                    <br/>
                     <br/>
                     <p 
                         className="self-center sub-text">

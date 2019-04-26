@@ -4,7 +4,7 @@ html {
 
 body {
   /*background-image: url('./resources/background.jpg');*/
-  background: #2d3947;
+  background: linear-gradient(#293342, #2d3947, #2d3947, #2d3947, #293342);
   margin: 0;
   padding: 0;
   font-family: 'Questrial', sans-serif;
@@ -33,7 +33,7 @@ form {
 
 .hoverable:hover {
   color: #b7b7b7;
-  transition: color 0.10s ease-in-out;
+  transition: color 0.15s ease-in-out;
 }
 
 input {
@@ -44,15 +44,18 @@ input {
   outline: none;
 }
 
+::placeholder {
+  color: #b7b7b7;
+}
+
 input:focus {
-  border-color: #009dd6;
-  transition: border-color 0.10s ease-in-out;
+  border-color: #1dbbf4;
+  transition: border-color 0.15s ease-in-out;
 }
 input:not(:focus) {
   border-color: #636262;
-  transition: border-color 0.10s ease-in-out;
+  transition: border-color 0.15s ease-in-out;
 }
-
 
 /* Global Styling */
 .main-margin {margin: 0;padding: 0;}

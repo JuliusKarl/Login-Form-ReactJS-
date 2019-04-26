@@ -14,7 +14,7 @@ class SignUp extends Component {
                     alt="logo"
                     className="logo-img"
                 />
-                <h2>Sign Up</h2>
+                <h3>Sign Up</h3>
                 <form method="post" className="items-start">
                     <input 
                         type="text" 
@@ -49,9 +49,10 @@ class SignUp extends Component {
                     />
                     <br/>
                     <button 
-                        className="self-center main-text">
+                        className="self-center main-text cursor-pointer">
                         Register
                     </button>
+                    <br/>
                     <br/>
                     <p 
                         className="self-center sub-text">
