@@ -4,23 +4,55 @@ html {
 
 body {
   /*background-image: url('./resources/background.jpg');*/
-  background: linear-gradient(#7ec1d3, #b7dde8, #e0f8ff);
+  background: #2d3947;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Questrial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+button {
+  background: #009dd6;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+}
+
+.content-container {
+  padding: 0 40px;
+}
+
 
 form {
   display: grid;
 }
 
-.content-container {
-  padding: 0 20px;
+.hoverable:hover {
+  color: #b7b7b7;
+  transition: color 0.10s ease-in-out;
 }
+
+input {
+  border: none;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  border-color: #636262;
+  outline: none;
+}
+
+input:focus {
+  border-color: #009dd6;
+  transition: border-color 0.10s ease-in-out;
+}
+input:not(:focus) {
+  border-color: #636262;
+  transition: border-color 0.10s ease-in-out;
+}
+
 
 /* Global Styling */
 .main-margin {margin: 0;padding: 0;}
@@ -30,7 +62,7 @@ form {
 .full-width {width: 100%;}
 .full-height {height: 100%;}
 .main-text {font-size: 16px;}
-.sub-text {font-size: 10px;}
+.sub-text {font-size: 12px;}
 .no-style { border:none;} 
 .cursor-pointer {cursor:pointer}
 

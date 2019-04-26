@@ -15,47 +15,37 @@ class Login extends Component {
                     alt="logo"
                     className="logo-img"
                 />
-                <p>Login</p>
+                <h2>Sign In</h2>
                 <form method="post" className="items-start">
-                    <label 
-                        htmlFor="email">
-                        Email
-                    </label>
                     <input 
                         type="text" 
                         id="email" 
                         name="email" 
                         placeholder="Email" 
-                        className="full-width"
+                        className="full-width main-text"
                     />
                     <br/>
-                    <label 
-                        htmlFor="password">
-                        Password
-                    </label>
                     <input 
                         type="text" 
                         id="password" 
                         name="password" 
                         placeholder="Password" 
-                        className="full-width"
+                        className="full-width main-text"
                     />
                     <a
                         name="forgotten"
                         onClick={this.props.forgotten}
-                        className="self-end sub-text cursor-pointer">
-                        <p>Forgot Username/Password?</p>
+                        className="self-end sub-text cursor-pointer hoverable">
+                        <p>Forgot Password?</p>
                     </a>
-                    <br/>
                     <button 
-                        className="self-center">
+                        className="self-center main-text">
                         Login
                     </button>
                     <br/>
                     <p 
-                        className="self-center sub-text cursor-pointer"
-                        onClick={this.props.signup}>
-                        Not a member? Sign Up
+                        className="self-center sub-text">
+                        Not a member? <span className="cursor-pointer hoverable" onClick={this.props.signup}>Sign Up</span>
                     </p>
                 </form>
             </div>

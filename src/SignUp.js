@@ -14,47 +14,48 @@ class SignUp extends Component {
                     alt="logo"
                     className="logo-img"
                 />
-                <p>Sign Up</p>
+                <h2>Sign Up</h2>
                 <form method="post" className="items-start">
-                    <label 
-                        htmlFor="email">
-                        Email
-                    </label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Username" 
+                        className="full-width main-text"
+                    />
+                    <br/>
                     <input 
                         type="text" 
                         id="email" 
                         name="email" 
                         placeholder="Email" 
-                        className="full-width"
+                        className="full-width main-text"
                     />
                     <br/>
-                    <label 
-                        htmlFor="password">
-                        Password
-                    </label>
                     <input 
                         type="text" 
                         id="password" 
                         name="password" 
                         placeholder="Password" 
-                        className="full-width"
+                        className="full-width main-text"
                     />
-                    <a
-                        name="forgotten"
-                        onClick={this.props.forgotten}
-                        className="self-end sub-text cursor-pointer">
-                        <p>Forgot Username/Password?</p>
-                    </a>
+                    <br/>
+                    <input 
+                        type="text" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Confirm Password" 
+                        className="full-width main-text"
+                    />
                     <br/>
                     <button 
-                        className="self-center">
-                        Login
+                        className="self-center main-text">
+                        Register
                     </button>
                     <br/>
                     <p 
-                        className="self-center sub-text cursor-pointer"
-                        onClick={this.props.login}>
-                        Already a member? Log In
+                        className="self-center sub-text">
+                        Already a member? <span className="cursor-pointer hoverable" onClick={this.props.login}>Log In</span>
                     </p>
                 </form>
             </div>

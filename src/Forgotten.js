@@ -14,47 +14,33 @@ class Forgotten extends Component {
                     alt="logo"
                     className="logo-img"
                 />
-                <p>Forgotten</p>
+                <h2>Trouble logging in?</h2>
                 <form method="post" className="items-start">
-                    <label 
-                        htmlFor="email">
-                        Email
-                    </label>
+                    <p>Enter your username or email and we'll 
+                       send you a link to get back into your account.
+                    </p>
                     <input 
                         type="text" 
                         id="email" 
                         name="email" 
-                        placeholder="Email" 
-                        className="full-width"
-                    />
-                    <br/>
-                    <label 
-                        htmlFor="password">
-                        Password
-                    </label>
-                    <input 
-                        type="text" 
-                        id="password" 
-                        name="password" 
-                        placeholder="Password" 
-                        className="full-width"
+                        placeholder="Email or Username" 
+                        className="full-width main-text"
                     />
                     <a
                         name="forgotten"
-                        onClick={this.props.forgotten}
-                        className="self-end sub-text cursor-pointer">
-                        <p>Forgot Username/Password?</p>
+                        onClick={this.props.signup}
+                        className="self-end sub-text cursor-pointer main-text">
+                        <p>Create new account</p>
                     </a>
-                    <br/>
                     <button 
-                        className="self-center">
-                        Login
+                        className="self-center main-text">
+                        Reset
                     </button>
                     <br/>
                     <p 
                         className="self-center sub-text cursor-pointer"
-                        onClick={this.props.signup}>
-                        Not a member? Sign Up
+                        onClick={this.props.login}>
+                        Back to login
                     </p>
                 </form>
             </div>
