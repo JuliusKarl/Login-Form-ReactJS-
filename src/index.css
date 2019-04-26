@@ -1,4 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
+  /*background-image: url('./resources/background.jpg');*/
+  background: linear-gradient(#7ec1d3, #b7dde8, #e0f8ff);
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -8,7 +14,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+form {
+  display: grid;
 }
+
+.content-container {
+  padding: 0 20px;
+}
+
+/* Global Styling */
+.main-margin {margin: 0;padding: 0;}
+.left-text {text-align:left;}
+.right-text {text-align:right;}
+.center-text {text-align:center;}
+.full-width {width: 100%;}
+.full-height {height: 100%;}
+.main-text {font-size: 16px;}
+.sub-text {font-size: 10px;}
+.no-style { border:none;} 
+.cursor-pointer {cursor:pointer}
+
+/* Grid Styling */
+.content-start {justify-content:start;}
+.content-end {justify-content:end;}
+.content-center {justify-content:center;}
+
+.items-start {justify-items:start;}
+.items-end {justify-items:end;}
+.items-center {justify-items:center;}
+
+.self-start {justify-self:start;}
+.self-end {justify-self:end;}
+.self-center {justify-self:center;}
